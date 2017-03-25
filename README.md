@@ -34,3 +34,10 @@ http://docs.tweepy.org/en/v3.5.0/api.html
 
 Don't forget the best practices
 https://support.twitter.com/articles/68916
+
+To check the process go to:
+ps -fp PID_NAME
+
+To kill process go to:
+kill -KILL PID_NAME
+
