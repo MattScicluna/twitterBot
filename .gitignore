@@ -3,4 +3,6 @@
 .idea/
 logs/
 permissions.py
+blacklist.p
+new_following_list.p
 __pycache__/

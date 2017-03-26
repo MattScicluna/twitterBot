@@ -1,8 +1,5 @@
 #  Below are arguments you can change to better suit your purposes!
 
-#  Message to be tweeted prior to doing friendly action!
-HELLO_MESSAGE = "Hello World! Time to begin my daily routine of Liking and Favouriting Tweets from all you good people!"
-
 #  Message to be sent at beginning of run
 GOOD_MORNING_MESSAGE = "Good Morning World and all who inhabit it!"
 
@@ -20,4 +17,19 @@ MAX_FOLLOW = 5000
 TO_REMOVE = 100
 
 # Number of iterations to run
-NUM_ITER = 24
+NUM_ITER = 100
+
+# Be nice to how many users per cycle?
+FAVS_PER_CYCLE = 10
+
+# Follow how users per cycle? (strongly recommend < 15)
+ADDS_PER_CYCLE = 6
+
+#  Possible messages to be tweeted once per cycle!
+HELLO_MESSAGE_DICT = {'1': 'A little caution outflanks a large cavalry',
+                      '2': 'A man is not old until regrets take the place of dreams.'
+                      }
+
+
+
+

@@ -1,2 +1,2 @@
+python-dateutil==2.5.3
 tweepy==3.5.0
-
