@@ -8,7 +8,7 @@ We will have to wait to see what comes out of these investigations. In the meanw
  
 
 <h3> The Bot</h3>
-The bot, as programmed, is just an attention seeker. It fetches tweets using a prespecified hashtag, and then collects the users IDs. It attempts to follow these users. Once it does so, it begins to favorite and retweet some of the users' tweets. It does these in cycles to obey Twitter API limits <sup>[3](#myfootnote3)</sup>. During each cycle it will perform a check to see if the accounts it is following are following it back, and if so, it will send out a DM (thats Millennialese for "Direct Message".) You can customize that message. For example, if you are a blogger you could reference your blog. If you are working in a web brigade in Moscow you could send some of your favorite Pizzagate articles from InfoWars [yeah, they actually fell for it.](http://www.mashable.com/2017/03/24/infowars-pizzagate-alex-jones-apology/#5w8nDm1gjgqt)
+The bot, as programmed, is just an attention seeker. It fetches tweets using a prespecified hashtag, and then collects the users IDs. It attempts to follow these users. Once it does so, it begins to favorite and retweet some of the users' tweets. It does these in cycles to obey Twitter API limits <sup>[2](#myfootnote3)</sup>. During each cycle it will perform a check to see if the accounts it is following are following it back, and if so, it will send out a DM (thats Millennialese for "Direct Message".) You can customize that message. For example, if you are a blogger you could reference your blog. If you are working in a web brigade in Moscow you could send some of your favorite Pizzagate articles from InfoWars [yeah, they actually fell for it.](http://www.mashable.com/2017/03/24/infowars-pizzagate-alex-jones-apology/#5w8nDm1gjgqt)
 
 There are two options available for what you can do with it. Firstly you can run it as is with minor changes in the conf.py file. This file has a set of parameters you can change to personalize the messages to be sent. The behavior of the bot will remain more or less the same.
 
@@ -38,9 +38,6 @@ If you want to try out my script out be mindful that your account may be suspend
 
 <br>
 <hr>
-<a name="myfootnote1">1</a>: Russains also employed people to act as "bots". These people were also known as "Trolls". It is clear that not all "bots" are "trolls", but notice that, conversly, not all "trolls" are "bots" - a quick visit to 
-[4Chan /pol/](http://www.boards.4chan.org/pol/) will verify this.
+<a name="myfootnote1">1</a>: Russains also employed people to act as "bots". These people were also known as "Trolls". It is clear that not all "bots" are "trolls", but notice that, conversly, not all "trolls" are "bots" - a quick visit to 4Chan's [/pol/](http://boards.4chan.org/pol/) will verify this.
 
-<a name="myfootnote2">2</a>: <span style="color:red">Note: By fun I don't mean spreading false news stories</span>.
-
-<a name="myfootnote3">3</a>: Twitter API rate limits are detailed [here](https:www.//dev.twitter.com/rest/public/rate-limits)
+<a name="myfootnote3">2</a>: Twitter API rate limits are detailed [here](https:www.//dev.twitter.com/rest/public/rate-limits)
