@@ -27,7 +27,11 @@ ADDS_PER_CYCLE = 6
 
 #  Possible messages to be tweeted once per cycle!
 HELLO_MESSAGE_DICT = {'1': 'A little caution outflanks a large cavalry',
-                      '2': 'A man is not old until regrets take the place of dreams.'
+                      '2': 'A man is not old until regrets take the place of dreams.',
+                      '3': "I'm glad to be alive!",
+                      '4': "What a great day today has been!",
+                      '5': "Do I pass the Turing test?",
+                      '6': "Who is your daddy?"
                       }
 
 
