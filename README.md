@@ -18,37 +18,6 @@ A [recent story from McClatchy](http://www.mcclatchydc.com/news/politics-governm
 The issue is very complicated. On the one hand, the CIA reported that the Russian government were behind the DNC email leaks, and that this was a retaliation for Clintons vocal opposition of Putin. There are even allegations (with some circumstantial evidence) that Trumps campaign colluded with the Russians! Putin is the guy who lives in the Billion dollar palace despite his salary of $137,000 a year. Journalists who criticize him seem to end up as victims in unsolved murders. He doesn't seem very trustworthy. On the other hand, there are allegations that this is just a Russian witchhunt from people like Glenn Greenwald and John McAfee.
 
 We will have to wait to see what comes out of these investigations. In the meanwhile, it is interesting to see how the Russians *could* very literally manufacture consent. It turns out that you can build your own bot on Twitter, and it doesn't take that much work!
-
-<h3> Starting off</h3>
-First you will want the code for the Bot. I wrote some in Python and pushed it into a GitHub repo [here](https://github.com/MattScicluna/twitterBot). You can clone and edit it as you see fit. Next you want to make a Twitter account. Once you do so you will want to join the dev community for twitter [here](https://dev.twitter.com/resources/signup). Go [here](https://apps.twitter.com/) to sign up for a dev account. hit *create new app* on the top right corner (see the picture.)
-
-![Create New App Page](/images/twitterbot/createnewapp.png)
-
-You should see secreen with some fillable text fields. Fill these in however you want. For the website and callback URLs you can put whatever site you want - we won't be using this here. Find your Access level and modify it to include writing permissions (how else are we going to spread propoganda?) When you fill these forms out the next screen should look like the picture below.
-
-![Twitter Dev Page](/images/twitterbot/twitterdevpg.png)
-
-Notice that you can verify the Access Level here. To be able to use my script you will need the Access Level to be at least *Read and Write*. Now we want to get those key and access tokens. This lets our program write stuff on our behalf. Go to the *Key and Access token* tab on the navbar. We are going to need the following things:
-
-- Consumer (API key)
-- Consumer Secret (API secret key)
-- Access Token 
-- Access Token Secret
-
-The consumer key and consumer secret key are easy to find. To get the latter, you will need to generate them. Navigate to the *Token Actions* area and clicking the left button.
-
-![Twitter Dev Page](/images/twitterbot/tokenactions.png)
-
-This in turn will generate the following information.
-
-![Twitter Dev Page](/images/twitterbot/accesstoken.png)
-
-Once you do this you will want to copy this information into the PERM_DICT dictionary in the permissions.py file. The lines you will want to modify should look like:
-<br>
-{% include_code permissions.py lang:python lines:1-7 %}
-<br>
-
-Fill in the corresponding fields. The boring part is now done, and you can start doing some fun stuff<sup>[2](#myfootnote2)</sup>.
  
 
 <h3> The Bot</h3>
