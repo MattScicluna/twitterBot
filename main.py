@@ -114,7 +114,8 @@ def run(consumer_key, consumer_secret, access_token, access_token_secret):
 
         # Begin cycle by sending random messages!
         try:
-            api.update_status(random.choice(conf.HELLO_MESSAGE_DICT.keys()))
+            # There are currently 7 possible canned messages
+            api.update_status(conf.HELLO_MESSAGE_DICT[random.randrange(1, 7)])
         except tweepy.TweepError as e:
             print(e.response)
 
@@ -135,7 +136,7 @@ def run(consumer_key, consumer_secret, access_token, access_token_secret):
         new_following_list = list(set(new_following_list) - set(recent_followed_back))
 
         # If they haven't followed back, be nice!
-        #be_nice(api, still_not_following)
+        be_nice(api, still_not_following)
 
         # Remove ones that are not following back after a while
         if len(new_following_list) > conf.MAX_FOLLOW:
@@ -155,8 +156,8 @@ def run(consumer_key, consumer_secret, access_token, access_token_secret):
               ". Will resume at: {}"
               .format(datetime.now().strftime('%b %d, %H:%M:%S'),
                       datetime.fromtimestamp(time_until_next).strftime('%b %d, %H:%M:%S')))
-        #while time.localtime(time_until_next) > time.localtime():
-        #    time.sleep(random.randrange(1, 5))
+        while time.localtime(time_until_next) > time.localtime():
+            time.sleep(random.randrange(1, 5))
 
         print("Resuming cycle! Time: {}".format(time.strftime('%b %d, %H:%M:%S')))
 
