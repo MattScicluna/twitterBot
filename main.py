@@ -7,7 +7,7 @@ import conf  # customize text in tweets and DMs sent by program
 
 def get_potential_friends(api):
     potential_friends = []
-    for tweet in tweepy.Cursor(api.search, q='#machinelearning').items(30):
+    for tweet in tweepy.Cursor(api.search, q='#machinelearning').items(50):
         print("added potential friend {}!".format(tweet.author.screen_name))
         potential_friends.append(tweet.author.id)
     return potential_friends

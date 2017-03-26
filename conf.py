@@ -20,10 +20,10 @@ TO_REMOVE = 100
 NUM_ITER = 100
 
 # Be nice to how many users per cycle?
-FAVS_PER_CYCLE = 10
+FAVS_PER_CYCLE = 15
 
 # Follow how users per cycle? (strongly recommend < 15)
-ADDS_PER_CYCLE = 6
+ADDS_PER_CYCLE = 15
 
 #  Possible messages to be tweeted once per cycle!
 HELLO_MESSAGE_DICT = {1: 'A little caution outflanks a large cavalry',
