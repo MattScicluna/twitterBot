@@ -1,17 +1,4 @@
-Title: Twitter Bots Really Affecting the US Election
-Date: 2017-03-23 3:00
-Slug: Twitter Bots Really Affecting the US Election
-Authors: Matthew Scicluna
-Summary: The FBI is investigating allegations that Twitter Bots Really Affected the US Outcome of the US Election. Turns out its very easy to make one!
-
-<style>
-img {
-   padding:1px;
-   border:1px solid #021a40;
-   border-radius: 25px;
-   margin: 10px;
-}
-</style>
+Title: twitterBot
 
 A [recent story from McClatchy](http://www.mcclatchydc.com/news/politics-government/white-house/article139695453.html) feeds into the continuing narrative that social media programs, better known as "bots," have been deployed by the Russains in an act of subterfuge <sup>[1](#myfootnote1)</sup>. These bots have clear political objectives, which they achieve by promoting various news stories/propoganda (depending on if the story aligns with your political preferences.)
 
@@ -21,7 +8,7 @@ We will have to wait to see what comes out of these investigations. In the meanw
  
 
 <h3> The Bot</h3>
-The bot, as programmed, is just an attention seeker. It fetches tweets using a prespecified hashtag, and then collects the users IDs. It attempts to follow these users. Once it does so, it begins to favorite and retweet some of the users' tweets. It does these in cycles to obey Twitter API limits <sup>[3](#myfootnote3)</sup>. During each cycle it will perform a check to see if the accounts it is following are following it back, and if so, it will send out a DM (thats Millennialese for "Direct Message".) You can customize that message. For example, if you are a blogger you could reference your blog. If you are working in a web brigade in Moscow you could send some of your favorite Pizzagate articles from InfoWars [(yeah, they actually fell for it.)](http://mashable.com/2017/03/24/infowars-pizzagate-alex-jones-apology/#5w8nDm1gjgqt)
+The bot, as programmed, is just an attention seeker. It fetches tweets using a prespecified hashtag, and then collects the users IDs. It attempts to follow these users. Once it does so, it begins to favorite and retweet some of the users' tweets. It does these in cycles to obey Twitter API limits <sup>[3](#myfootnote3)</sup>. During each cycle it will perform a check to see if the accounts it is following are following it back, and if so, it will send out a DM (thats Millennialese for "Direct Message".) You can customize that message. For example, if you are a blogger you could reference your blog. If you are working in a web brigade in Moscow you could send some of your favorite Pizzagate articles from InfoWars [yeah, they actually fell for it.](http://mashable.com/2017/03/24/infowars-pizzagate-alex-jones-apology/#5w8nDm1gjgqt)
 
 There are two options available for what you can do with it. Firstly you can run it as is with minor changes in the conf.py file. This file has a set of parameters you can change to personalize the messages to be sent. The behavior of the bot will remain more or less the same.
 
