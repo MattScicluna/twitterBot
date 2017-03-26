@@ -1,4 +1,4 @@
-Title: twitterBot
+<H1>twitterBot</H1>
 
 A [recent story from McClatchy](http://www.mcclatchydc.com/news/politics-government/white-house/article139695453.html) feeds into the continuing narrative that social media programs, better known as "bots," have been deployed by the Russains in an act of subterfuge <sup>[1](#myfootnote1)</sup>. These bots have clear political objectives, which they achieve by promoting various news stories/propoganda (depending on if the story aligns with your political preferences.)
 
@@ -8,11 +8,11 @@ We will have to wait to see what comes out of these investigations. In the meanw
  
 
 <h3> The Bot</h3>
-The bot, as programmed, is just an attention seeker. It fetches tweets using a prespecified hashtag, and then collects the users IDs. It attempts to follow these users. Once it does so, it begins to favorite and retweet some of the users' tweets. It does these in cycles to obey Twitter API limits <sup>[3](#myfootnote3)</sup>. During each cycle it will perform a check to see if the accounts it is following are following it back, and if so, it will send out a DM (thats Millennialese for "Direct Message".) You can customize that message. For example, if you are a blogger you could reference your blog. If you are working in a web brigade in Moscow you could send some of your favorite Pizzagate articles from InfoWars [yeah, they actually fell for it.](http://mashable.com/2017/03/24/infowars-pizzagate-alex-jones-apology/#5w8nDm1gjgqt)
+The bot, as programmed, is just an attention seeker. It fetches tweets using a prespecified hashtag, and then collects the users IDs. It attempts to follow these users. Once it does so, it begins to favorite and retweet some of the users' tweets. It does these in cycles to obey Twitter API limits <sup>[3](#myfootnote3)</sup>. During each cycle it will perform a check to see if the accounts it is following are following it back, and if so, it will send out a DM (thats Millennialese for "Direct Message".) You can customize that message. For example, if you are a blogger you could reference your blog. If you are working in a web brigade in Moscow you could send some of your favorite Pizzagate articles from InfoWars [yeah, they actually fell for it.](http://www.mashable.com/2017/03/24/infowars-pizzagate-alex-jones-apology/#5w8nDm1gjgqt)
 
 There are two options available for what you can do with it. Firstly you can run it as is with minor changes in the conf.py file. This file has a set of parameters you can change to personalize the messages to be sent. The behavior of the bot will remain more or less the same.
 
-Secondly you can modify the source code to make it do whatever you want it to do. A few notes about this. The bot makes extensive use of the tweepy Python wrapper around the Twitter API. More information about tweepy can be found [here](http://docs.tweepy.org/en/v3.5.0/api.html).
+Secondly you can modify the source code to make it do whatever you want it to do. A few notes about this. The bot makes extensive use of the tweepy Python wrapper around the Twitter API. More information about tweepy can be found [here](http:www.//docs.tweepy.org/en/v3.5.0/api.html).
 
 <h3> Running the Bot in the Background</h3>
 If you are on Ubuntu, you can deploy this Python script in the background by entering the following into the terminal
@@ -21,7 +21,7 @@ If you are on Ubuntu, you can deploy this Python script in the background by ent
 bash backgroundRun.sh 
 ```
 
-This will execute the Python script using the nohup POSIX command, [which is really great](http://linux.101hacks.com/unix/nohup-command/). You can go to the logs folder to see two files, twitterBot.txt and save_pid.txt. The former is a log of what the bot is up to, and the latter gives out PID information. This PID information You can then kill the process using the following
+This will execute the Python script using the nohup POSIX command, [which is really great](http:/www./linux.101hacks.com/unix/nohup-command/). You can go to the logs folder to see two files, twitterBot.txt and save_pid.txt. The former is a log of what the bot is up to, and the latter gives out PID information. This PID information You can then kill the process using the following
 
 ```bash
 kill -KILL PID_NAME
@@ -39,8 +39,8 @@ If you want to try out my script out be mindful that your account may be suspend
 <br>
 <hr>
 <a name="myfootnote1">1</a>: Russains also employed people to act as "bots". These people were also known as "Trolls". It is clear that not all "bots" are "trolls", but notice that, conversly, not all "trolls" are "bots" - a quick visit to 
-[4Chan /pol/](http://boards.4chan.org/pol/) will verify this.
+[4Chan /pol/](http://www.boards.4chan.org/pol/) will verify this.
 
 <a name="myfootnote2">2</a>: <span style="color:red">Note: By fun I don't mean spreading false news stories</span>.
 
-<a name="myfootnote3">3</a>: Twitter API rate limits are detailed [here](https://dev.twitter.com/rest/public/rate-limits)
+<a name="myfootnote3">3</a>: Twitter API rate limits are detailed [here](https:www.//dev.twitter.com/rest/public/rate-limits)
