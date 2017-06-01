@@ -1,18 +1,14 @@
 <H1>twitterBot</H1>
 
-A [recent story from McClatchy](http://www.mcclatchydc.com/news/politics-government/white-house/article139695453.html) feeds into the continuing narrative that social media programs, better known as "bots," have been deployed by the Russains in an act of subterfuge <sup>[1](#myfootnote1)</sup>. These bots have clear political objectives, which they achieve by promoting various news stories/propoganda (depending on if the story aligns with your political preferences.)
-
-The issue is very complicated. On the one hand, the CIA reported that the Russian government were behind the DNC email leaks, and that this was a retaliation for Clintons vocal opposition of Putin. There are even allegations (with some circumstantial evidence) that Trumps campaign colluded with the Russians! Putin is the guy who lives in the Billion dollar palace despite his salary of $137,000 a year. Journalists who criticize him seem to end up as victims in unsolved murders. He doesn't seem very trustworthy. On the other hand, there are allegations that this is just a Russian witchhunt from people like Glenn Greenwald and John McAfee.
-
-We will have to wait to see what comes out of these investigations. In the meanwhile, it is interesting to see how the Russians *could* very literally manufacture consent. It turns out that you can build your own bot on Twitter, and it doesn't take that much work!
- 
-
-<h3> The Bot</h3>
-The bot, as programmed, is just an attention seeker. It fetches tweets using a prespecified hashtag, and then collects the users IDs. It attempts to follow these users. Once it does so, it begins to favorite and retweet some of the users' tweets. It does these in cycles to obey Twitter API limits <sup>[2](#myfootnote2)</sup>. During each cycle it will perform a check to see if the accounts it is following are following it back, and if so, it will send out a DM (thats Millennialese for "Direct Message".) You can customize that message. For example, if you are a blogger you could reference your blog. If you are working in a web brigade in Moscow you could send some of your favorite Pizzagate articles from InfoWars [yeah, they actually fell for it.](http://www.mashable.com/2017/03/24/infowars-pizzagate-alex-jones-apology/#5w8nDm1gjgqt)
+The bot, as programmed, is just an attention seeker. It fetches tweets using a prespecified hashtag, and then collects the users IDs. It attempts to follow these users. Once it does so, it begins to favorite and retweet some of the users' tweets. It does these in cycles to obey Twitter API limits [1].
 
 There are two options available for what you can do with it. Firstly you can run it as is with minor changes in the conf.py file. This file has a set of parameters you can change to personalize the messages to be sent. The behavior of the bot will remain more or less the same.
 
-Secondly you can modify the source code to make it do whatever you want it to do. A few notes about this. The bot makes extensive use of the tweepy Python wrapper around the Twitter API. More information about tweepy can be found [here](http:www.//docs.tweepy.org/en/v3.5.0/api.html).
+Secondly you can modify the source code to make it do whatever you want it to do. The bot makes extensive use of the tweepy Python wrapper around the Twitter API. More information about tweepy can be found [here](http:www.//docs.tweepy.org/en/v3.5.0/api.html).
+
+<h3> Deploying the Bot</h3>
+For detailed instructions on how to run the bot, please see my [blog post](https://mattscicluna.github.io/Twitter%20Bots%20Really%20Affecting%20the%20US%20Election.html#.WSwTDnXytOA)
+
 
 <h3> Running the Bot in the Background</h3>
 If you are on Ubuntu, you can deploy this Python script in the background by entering the following into the terminal
@@ -27,7 +23,7 @@ This will execute the Python script using the nohup POSIX command, [which is rea
 kill -KILL PID_NAME
 ```
 
-where PID_NAME is the PID in save_pid.txt. I recommend reading the best practices [here](https://support.twitter.com/articles/68916). With all this out of the way there is one last thing to mention.
+where PID_NAME is the PID in save_pid.txt.
 
 <h3> Ethics of Bots</h3>
 If you read Twitter's guide for best practices you will notice that Twitter is not a fan of accounts automatically following people. This is what my script does. Why would I post the code of a bot that violates this? The main reason is that everything I did can be easily replicated without reading this article. I am not introducing any new information. I am using open source software, and there are a lot of excellent online reseources on how to use this software. Anyone who wants to deploy a bot on twitter can already do so with nominal programming experience. 
@@ -38,6 +34,5 @@ If you want to try out my script out be mindful that your account may be suspend
 
 <br>
 <hr>
-<a name="myfootnote1">1</a>: Russains also employed people to act as "bots". These people were also known as "Trolls". It is clear that not all "bots" are "trolls", but notice that, conversly, not all "trolls" are "bots" - a quick visit to 4Chan's [/pol/](http://boards.4chan.org/pol/) will verify this.
 
-<a name="myfootnote3">2</a>: Twitter API rate limits are detailed [here](https:www.//dev.twitter.com/rest/public/rate-limits)
+[1] Twitter API rate limits are detailed [here](https:www.//dev.twitter.com/rest/public/rate-limits)

@@ -1,8 +1,8 @@
 # Created by .ignore support plugin (hsz.mobi)
-.gitignore
 .idea/
 logs/
 permissions.py
 blacklist.p
 new_following_list.p
 __pycache__/
+fortunes/
